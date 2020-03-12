@@ -1,5 +1,7 @@
 ﻿#ifdef WIN32
 #define NOMINMAX
+#define _USE_MATH_DEFINES
+#include <cmath>
 #endif
 
 #include <application.h>

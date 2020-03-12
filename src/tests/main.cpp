@@ -4,6 +4,13 @@
 //using Eigen::Vector2d;
 //using Eigen::VectorXd;
 
+#ifdef WIN32
+#define NOMINMAX
+#define _USE_MATH_DEFINES
+#include <cmath>
+#endif
+
+
 #include <RigidBody.h>
 #include <Joint.h>
 #include <RigidBodySimulation.h>
@@ -124,7 +131,7 @@ TestResult testFixedAngleJoint() {
 
     RigidBody rb(0, 1.0);
 
-    FixedAngleJoint joint({0, M_PI/3});
+    FixedAngleJoint joint{0, M_PI/3};
 
     MatrixXd dC_dx = joint.jacobian(x, rb);
 

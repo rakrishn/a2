@@ -2,6 +2,7 @@
 
 #include <Eigen/Core>
 #include <Eigen/Geometry>
+#include <array>
 
 using Eigen::Vector2d;
 using Eigen::VectorXd;
