@@ -29,9 +29,7 @@ We will model a general class of mechanisms with rigid bodies and constraints th
 
 ![image-20190314234327124](mechanism.png)
 
-**Rigid bodies.** We will model the links as rigid bodies.  The position $x_{p, i}$ and rotation angle $\theta_{i}$ define the state $x_i = \{x_b, \theta_i\}$ of the rigid body $i$.
-
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2b}"/>
+**Rigid bodies.** We will model the links as rigid bodies.  The position $x_{p, i}$ and rotation angle $\theta_{i}$ define the state $x_i = \{x_{p,i}, \theta_i\}$ of the rigid body $i$.
 
 The world coordinates, $p_w$, of a point $p_l$, that is in local coordinates of a rigid body $i$, can be thus computed as:
 
